@@ -109,6 +109,7 @@ $(SRC_PATH)/src/moaicore/MOAILayerBridge2D.cpp \
 $(SRC_PATH)/src/moaicore/MOAILayoutFrame.cpp \
 $(SRC_PATH)/src/moaicore/MOAILineBrush.cpp \
 $(SRC_PATH)/src/moaicore/MOAILocationSensor.cpp \
+$(SRC_PATH)/src/moaicore/MOAILogMessages.cpp \
 $(SRC_PATH)/src/moaicore/MOAILogMgr.cpp \
 $(SRC_PATH)/src/moaicore/MOAIMesh.cpp \
 $(SRC_PATH)/src/moaicore/MOAIMotionSensor.cpp \
