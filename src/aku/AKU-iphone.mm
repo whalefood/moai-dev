@@ -77,7 +77,7 @@ void AKUIphoneInit ( UIApplication* application ) {
 	loadMoaiLib_NSObject ();
 	loadMoaiLib_NSString ();
 
-	MOAIApp::Get ().SetApplication ( application );
+	MOAIApp::Affirm ().SetApplication ( application );
 	
 	// Device properties	
 	MOAIEnvironment::Get ().SetAppVersion ( [[[[ NSBundle mainBundle ] infoDictionary ] objectForKey:@"CFBundleVersion" ] UTF8String ] );
