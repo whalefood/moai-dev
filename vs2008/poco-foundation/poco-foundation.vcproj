@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="poco-foundation"
-	ProjectGUID="{8164D41D-B053-405B-826C-CF37AC0EF176}"
+	ProjectGUID="{3F51E45D-D783-4A04-990B-B51EEB6A3FB8}"
 	RootNamespace="poco-foundation"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
@@ -45,7 +45,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
-				AdditionalIncludeDirectories="..\..\src;&quot;..\..\3rdparty\poco-1.4.1p1\Foundation\include&quot;"
+				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.3p1\Foundation\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;Foundation_EXPORTS;POCO_STATIC;PCRE_STATIC"
 				GeneratePreprocessedFile="0"
 				KeepComments="false"
@@ -115,7 +115,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\src;&quot;..\..\3rdparty\poco-1.4.1p1\Foundation\include&quot;"
+				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.3p1\Foundation\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;Foundation_EXPORTS;POCO_STATIC;PCRE_STATIC"
 				StringPooling="true"
 				MinimalRebuild="true"
@@ -126,6 +126,7 @@
 				ForceConformanceInForLoopScope="true"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="0"
+				ProgramDataBaseFileName="..\lib\PocoFoundationmdd.pdb"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
 				DebugInformationFormat="4"
@@ -171,63 +172,43 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Ascii.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Ascii.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\AtomicCounter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\AtomicCounter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Bugcheck.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Bugcheck.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ByteOrder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ByteOrder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Checksum.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Checksum.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Debugger.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Debugger.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DynamicAny.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DynamicAny.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DynamicAnyHolder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DynamicAnyHolder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Environment.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Environment.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Environment_UNIX.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Environment_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Environment_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -247,7 +228,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Environment_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Environment_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -267,7 +248,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Environment_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Environment_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -287,19 +268,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Exception.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Format.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FPEnvironment.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FPEnvironment_C99.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Environment_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -319,7 +288,19 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FPEnvironment_DEC.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Exception.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Format.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FPEnvironment.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FPEnvironment_C99.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -339,7 +320,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FPEnvironment_DUMMY.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FPEnvironment_DEC.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -359,7 +340,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FPEnvironment_SUN.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FPEnvironment_DUMMY.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -379,7 +360,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FPEnvironment_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FPEnvironment_SUN.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -399,35 +380,55 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\MemoryPool.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FPEnvironment_WIN32.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\MemoryPool.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NestedDiagnosticContext.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NestedDiagnosticContext.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NumberFormatter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NumberFormatter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NumberParser.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NumberParser.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RefCountedObject.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RefCountedObject.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\String.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\String.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\StringTokenizer.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\StringTokenizer.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Void.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Void.cpp"
 					>
 				</File>
 			</Filter>
@@ -435,211 +436,211 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Any.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Any.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Ascii.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Ascii.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AtomicCounter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AtomicCounter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AutoPtr.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AutoPtr.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AutoReleasePool.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AutoReleasePool.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Buffer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Buffer.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Bugcheck.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Bugcheck.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ByteOrder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ByteOrder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Checksum.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Checksum.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Config.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Config.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Debugger.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Debugger.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DynamicAny.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DynamicAny.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DynamicAnyHolder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DynamicAnyHolder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DynamicFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DynamicFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Environment.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Environment.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Environment_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Environment_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Environment_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Environment_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Environment_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Environment_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Environment_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Environment_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Exception.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Exception.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Format.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Format.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Foundation.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Foundation.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FPEnvironment.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FPEnvironment.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FPEnvironment_C99.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FPEnvironment_C99.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FPEnvironment_DEC.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FPEnvironment_DEC.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FPEnvironment_DUMMY.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FPEnvironment_DUMMY.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FPEnvironment_SUN.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FPEnvironment_SUN.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FPEnvironment_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FPEnvironment_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Instantiator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Instantiator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MemoryPool.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\MemoryPool.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MetaProgramming.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\MetaProgramming.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedTuple.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedTuple.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NestedDiagnosticContext.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NestedDiagnosticContext.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Nullable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Nullable.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NumberFormatter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NumberFormatter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NumberParser.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NumberParser.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Platform.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Platform.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Platform_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Platform_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Platform_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Platform_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Platform_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Platform_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Poco.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Poco.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RefCountedObject.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RefCountedObject.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedPtr.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedPtr.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SingletonHolder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SingletonHolder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\String.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\String.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StringTokenizer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StringTokenizer.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Tuple.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Tuple.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TypeList.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TypeList.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Types.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Types.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UnWindows.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UnWindows.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Version.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Version.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Void.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Void.h"
 					>
 				</File>
 			</Filter>
@@ -651,55 +652,35 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Base64Decoder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Base64Decoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Base64Encoder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Base64Encoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\BinaryReader.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\BinaryReader.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\BinaryWriter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\BinaryWriter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\CountingStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\CountingStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DeflatingStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DeflatingStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FileStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FileStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FileStream_POSIX.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FileStream_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FileStream_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -719,43 +700,63 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\HexBinaryDecoder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FileStream_WIN32.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\HexBinaryDecoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\HexBinaryEncoder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\HexBinaryEncoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\InflatingStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\InflatingStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LineEndingConverter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LineEndingConverter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\MemoryStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\MemoryStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NullStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NullStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\StreamCopier.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\StreamCopier.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\StreamTokenizer.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\StreamTokenizer.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TeeStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TeeStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Token.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Token.cpp"
 					>
 				</File>
 			</Filter>
@@ -763,99 +764,99 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Base64Decoder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Base64Decoder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Base64Encoder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Base64Encoder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\BinaryReader.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\BinaryReader.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\BinaryWriter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\BinaryWriter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\BufferAllocator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\BufferAllocator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\BufferedBidirectionalStreamBuf.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\BufferedBidirectionalStreamBuf.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\BufferedStreamBuf.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\BufferedStreamBuf.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\CountingStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\CountingStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DeflatingStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DeflatingStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FileStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FileStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FileStream_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FileStream_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FileStream_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FileStream_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HexBinaryDecoder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HexBinaryDecoder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HexBinaryEncoder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HexBinaryEncoder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\InflatingStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\InflatingStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LineEndingConverter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LineEndingConverter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MemoryStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\MemoryStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NullStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NullStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StreamCopier.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StreamCopier.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StreamTokenizer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StreamTokenizer.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StreamUtil.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StreamUtil.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TeeStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TeeStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Token.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Token.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UnbufferedStreamBuf.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UnbufferedStreamBuf.h"
 					>
 				</File>
 			</Filter>
@@ -863,83 +864,83 @@
 				Name="zlib"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\adler32.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\adler32.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\compress.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\compress.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\crc32.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\crc32.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\crc32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\crc32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\deflate.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\deflate.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\deflate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\deflate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\infback.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\infback.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inffast.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inffast.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inffast.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inffast.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inffixed.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inffixed.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inflate.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inflate.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inflate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inflate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inftrees.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inftrees.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\inftrees.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\inftrees.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\trees.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\trees.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\trees.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\trees.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\zconf.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\zconf.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\zlib.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\zlib.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\zutil.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\zutil.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\zutil.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\zutil.h"
 					>
 				</File>
 			</Filter>
@@ -951,43 +952,23 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ActiveDispatcher.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ActiveDispatcher.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Condition.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Condition.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ErrorHandler.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ErrorHandler.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Event.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Event.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Event_POSIX.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Event_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Event_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1007,11 +988,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Mutex.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Mutex_POSIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Event_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1031,7 +1008,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Mutex_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Mutex.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Mutex_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1051,15 +1032,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Runnable.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RWLock.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RWLock_POSIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Mutex_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1079,7 +1052,15 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RWLock_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Runnable.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RWLock.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RWLock_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1099,11 +1080,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Semaphore.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Semaphore_POSIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RWLock_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1123,7 +1100,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Semaphore_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Semaphore.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Semaphore_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1143,19 +1124,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SignalHandler.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SynchronizedObject.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Thread.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Thread_POSIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Semaphore_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1175,7 +1144,19 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Thread_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SignalHandler.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SynchronizedObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Thread.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Thread_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1195,19 +1176,39 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ThreadLocal.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Thread_WIN32.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ThreadLocal.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ThreadPool.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ThreadPool.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ThreadTarget.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ThreadTarget.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Timer.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Timer.cpp"
 					>
 				</File>
 			</Filter>
@@ -1215,135 +1216,135 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ActiveDispatcher.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ActiveDispatcher.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ActiveMethod.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ActiveMethod.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ActiveResult.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ActiveResult.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ActiveRunnable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ActiveRunnable.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ActiveStarter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ActiveStarter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Activity.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Activity.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Condition.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Condition.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ErrorHandler.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ErrorHandler.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Event.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Event.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Event_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Event_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Event_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Event_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Mutex.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Mutex.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Mutex_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Mutex_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Mutex_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Mutex_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Runnable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Runnable.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RunnableAdapter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RunnableAdapter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RWLock.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RWLock.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RWLock_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RWLock_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RWLock_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RWLock_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ScopedLock.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ScopedLock.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ScopedUnlock.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ScopedUnlock.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Semaphore.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Semaphore.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Semaphore_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Semaphore_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Semaphore_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Semaphore_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SignalHandler.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SignalHandler.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SynchronizedObject.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SynchronizedObject.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Thread.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Thread.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Thread_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Thread_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Thread_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Thread_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ThreadLocal.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ThreadLocal.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ThreadPool.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ThreadPool.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ThreadTarget.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ThreadTarget.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Timer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Timer.h"
 					>
 				</File>
 			</Filter>
@@ -1355,35 +1356,31 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DigestEngine.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DigestEngine.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DigestStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DigestStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\MD2Engine.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\MD4Engine.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\MD4Engine.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\MD5Engine.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\MD5Engine.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Random.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Random.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RandomStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RandomStream.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SHA1Engine.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SHA1Engine.cpp"
 					>
 				</File>
 			</Filter>
@@ -1391,39 +1388,35 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DigestEngine.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DigestEngine.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DigestStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DigestStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HMACEngine.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HMACEngine.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MD2Engine.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\MD4Engine.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MD4Engine.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\MD5Engine.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MD5Engine.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Random.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Random.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RandomStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RandomStream.h"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SHA1Engine.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SHA1Engine.h"
 					>
 				</File>
 			</Filter>
@@ -1435,35 +1428,15 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Manifest.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Manifest.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedLibrary.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedLibrary.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedLibrary_HPUX.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedLibrary_UNIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedLibrary_HPUX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1483,7 +1456,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedLibrary_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedLibrary_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1503,7 +1476,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedLibrary_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedLibrary_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1523,7 +1496,27 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedLibrary_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedLibrary_WIN32.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedLibrary_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1547,43 +1540,43 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ClassLibrary.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ClassLibrary.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ClassLoader.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ClassLoader.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Manifest.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Manifest.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\MetaObject.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\MetaObject.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedLibrary.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedLibrary.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedLibrary_HPUX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedLibrary_HPUX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedLibrary_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedLibrary_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedLibrary_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedLibrary_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedLibrary_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedLibrary_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedLibrary_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedLibrary_WIN32U.h"
 					>
 				</File>
 			</Filter>
@@ -1595,19 +1588,19 @@
 				Name="PCRE Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_config.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_config.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_internal.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_internal.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ucp.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ucp.h"
 					>
 				</File>
 			</Filter>
@@ -1615,7 +1608,7 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RegularExpression.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RegularExpression.cpp"
 					>
 				</File>
 			</Filter>
@@ -1623,7 +1616,7 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RegularExpression.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RegularExpression.h"
 					>
 				</File>
 			</Filter>
@@ -1631,59 +1624,59 @@
 				Name="PCRE Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_chartables.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_chartables.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_compile.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_compile.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_exec.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_exec.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_fullinfo.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_fullinfo.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_globals.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_globals.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_maketables.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_maketables.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_newline.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_newline.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_ord2utf8.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_ord2utf8.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_study.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_study.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_tables.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_tables.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_try_flipped.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_try_flipped.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_ucd.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_ucd.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_valid_utf8.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_valid_utf8.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pcre_xclass.c"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pcre_xclass.c"
 					>
 				</File>
 			</Filter>
@@ -1695,67 +1688,47 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ArchiveStrategy.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ArchiveStrategy.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\AsyncChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\AsyncChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Channel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Channel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Configurable.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Configurable.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ConsoleChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ConsoleChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\EventLogChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\EventLogChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FileChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FileChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Formatter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Formatter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FormattingChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FormattingChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LogFile.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LogFile.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LogFile_STD.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LogFile_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LogFile_STD.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1775,7 +1748,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LogFile_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LogFile_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1795,7 +1768,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LogFile_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LogFile_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1815,31 +1788,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Logger.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LoggingFactory.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LoggingRegistry.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LogStream.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Message.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NullChannel.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\OpcomChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LogFile_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1859,31 +1808,31 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PatternFormatter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Logger.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PurgeStrategy.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LoggingFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\RotateStrategy.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LoggingRegistry.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SimpleFileChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LogStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SplitterChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Message.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\StreamChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NullChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SyslogChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\OpcomChannel.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -1903,7 +1852,51 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\WindowsConsoleChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PatternFormatter.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PurgeStrategy.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\RotateStrategy.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SimpleFileChannel.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SplitterChannel.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\StreamChannel.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SyslogChannel.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\WindowsConsoleChannel.cpp"
 					>
 				</File>
 			</Filter>
@@ -1911,123 +1904,123 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ArchiveStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ArchiveStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AsyncChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AsyncChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Channel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Channel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Configurable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Configurable.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ConsoleChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ConsoleChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\EventLogChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\EventLogChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FileChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FileChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Formatter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Formatter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FormattingChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FormattingChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LogFile.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LogFile.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LogFile_STD.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LogFile_STD.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LogFile_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LogFile_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LogFile_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LogFile_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LogFile_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LogFile_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Logger.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Logger.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LoggingFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LoggingFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LoggingRegistry.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LoggingRegistry.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LogStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LogStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Message.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Message.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NullChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NullChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\OpcomChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\OpcomChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PatternFormatter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PatternFormatter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pocomsg.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pocomsg.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PurgeStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PurgeStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\RotateStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\RotateStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SimpleFileChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SimpleFileChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SplitterChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SplitterChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StreamChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StreamChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SyslogChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SyslogChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\WindowsConsoleChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\WindowsConsoleChannel.h"
 					>
 				</File>
 			</Filter>
@@ -2035,7 +2028,7 @@
 				Name="Message Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pocomsg.mc"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pocomsg.mc"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2061,7 +2054,7 @@
 				Name="Resource Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\pocomsg.rc"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pocomsg.rc"
 					>
 				</File>
 			</Filter>
@@ -2073,27 +2066,27 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\AbstractObserver.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\AbstractObserver.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Notification.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Notification.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NotificationCenter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NotificationCenter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NotificationQueue.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NotificationQueue.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PriorityNotificationQueue.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PriorityNotificationQueue.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TimedNotificationQueue.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TimedNotificationQueue.cpp"
 					>
 				</File>
 			</Filter>
@@ -2101,35 +2094,35 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AbstractObserver.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AbstractObserver.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NObserver.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NObserver.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Notification.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Notification.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NotificationCenter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NotificationCenter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NotificationQueue.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NotificationQueue.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Observer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Observer.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PriorityNotificationQueue.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PriorityNotificationQueue.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TimedNotificationQueue.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TimedNotificationQueue.h"
 					>
 				</File>
 			</Filter>
@@ -2141,31 +2134,11 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DirectoryIterator.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DirectoryIterator.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DirectoryIterator_UNIX.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DirectoryIterator_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DirectoryIterator_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2185,7 +2158,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DirectoryIterator_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DirectoryIterator_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2205,7 +2178,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DirectoryIterator_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DirectoryIterator_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2225,11 +2198,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\File.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\File_UNIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DirectoryIterator_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2249,7 +2218,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\File_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\File.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\File_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2269,7 +2242,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\File_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\File_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2289,7 +2262,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\File_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\File_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2309,15 +2282,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Glob.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Path.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Path_UNIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\File_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2337,7 +2302,15 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Path_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Glob.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Path.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Path_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2357,7 +2330,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Path_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Path_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2377,7 +2350,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Path_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Path_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2397,7 +2370,27 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TemporaryFile.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Path_WIN32U.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TemporaryFile.cpp"
 					>
 				</File>
 			</Filter>
@@ -2405,71 +2398,71 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DirectoryIterator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DirectoryIterator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DirectoryIterator_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DirectoryIterator_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DirectoryIterator_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DirectoryIterator_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DirectoryIterator_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DirectoryIterator_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DirectoryIterator_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DirectoryIterator_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\File.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\File.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\File_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\File_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\File_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\File_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\File_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\File_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\File_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\File_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Glob.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Glob.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Path.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Path.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Path_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Path_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Path_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Path_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Path_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Path_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Path_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Path_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TemporaryFile.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TemporaryFile.h"
 					>
 				</File>
 			</Filter>
@@ -2481,31 +2474,11 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedEvent.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedEvent.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedEvent_UNIX.cpp"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						ExcludedFromBuild="true"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedEvent_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedEvent_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2525,7 +2498,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedEvent_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedEvent_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2545,7 +2518,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedEvent_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedEvent_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2565,11 +2538,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedMutex.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedMutex_UNIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedEvent_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2589,7 +2558,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedMutex_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedMutex.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedMutex_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2609,7 +2582,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedMutex_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedMutex_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2629,7 +2602,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\NamedMutex_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedMutex_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2649,15 +2622,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Pipe.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PipeImpl.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PipeImpl_DUMMY.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\NamedMutex_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2677,7 +2642,15 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PipeImpl_POSIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Pipe.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PipeImpl.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PipeImpl_DUMMY.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2697,7 +2670,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PipeImpl_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PipeImpl_POSIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2717,15 +2690,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\PipeStream.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Process.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Process_UNIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PipeImpl_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2745,7 +2710,15 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Process_VMS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\PipeStream.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Process.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Process_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2765,7 +2738,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Process_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Process_VMS.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2785,7 +2758,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Process_WIN32U.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Process_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2805,11 +2778,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedMemory.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedMemory_DUMMY.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Process_WIN32U.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2829,7 +2798,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedMemory_POSIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedMemory.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedMemory_DUMMY.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2849,7 +2822,27 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\SharedMemory_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedMemory_POSIX.cpp"
+					>
+					<FileConfiguration
+						Name="Release|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|Win32"
+						ExcludedFromBuild="true"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\SharedMemory_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -2873,103 +2866,103 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedEvent.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedEvent.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedEvent_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedEvent_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedEvent_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedEvent_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedEvent_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedEvent_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedEvent_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedEvent_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedMutex.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedMutex.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedMutex_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedMutex_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedMutex_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedMutex_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedMutex_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedMutex_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NamedMutex_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NamedMutex_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Pipe.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Pipe.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PipeImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PipeImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PipeImpl_DUMMY.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PipeImpl_DUMMY.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PipeImpl_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PipeImpl_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PipeImpl_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PipeImpl_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PipeStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PipeStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Process.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Process.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Process_UNIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Process_UNIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Process_VMS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Process_VMS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Process_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Process_WIN32.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Process_WIN32U.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Process_WIN32U.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedMemory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedMemory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedMemory_DUMMY.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedMemory_DUMMY.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedMemory_POSIX.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedMemory_POSIX.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SharedMemory_WIN32.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SharedMemory_WIN32.h"
 					>
 				</File>
 			</Filter>
@@ -2981,11 +2974,11 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\UUID.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\UUID.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\UUIDGenerator.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\UUIDGenerator.cpp"
 					>
 				</File>
 			</Filter>
@@ -2993,11 +2986,11 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UUID.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UUID.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UUIDGenerator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UUIDGenerator.h"
 					>
 				</File>
 			</Filter>
@@ -3009,43 +3002,43 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DateTime.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DateTime.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DateTimeFormat.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DateTimeFormat.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DateTimeFormatter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DateTimeFormatter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\DateTimeParser.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\DateTimeParser.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\LocalDateTime.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\LocalDateTime.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Stopwatch.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Stopwatch.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Timespan.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Timespan.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Timestamp.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Timestamp.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Timezone.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Timezone.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Timezone_UNIX.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Timezone_UNIX.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -3065,7 +3058,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Timezone_WIN32.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Timezone_WIN32.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -3089,39 +3082,39 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DateTime.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DateTime.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DateTimeFormat.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DateTimeFormat.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DateTimeFormatter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DateTimeFormatter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DateTimeParser.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DateTimeParser.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LocalDateTime.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LocalDateTime.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Stopwatch.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Stopwatch.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Timespan.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Timespan.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Timestamp.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Timestamp.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Timezone.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Timezone.h"
 					>
 				</File>
 			</Filter>
@@ -3133,59 +3126,59 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\ASCIIEncoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\ASCIIEncoding.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Latin1Encoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Latin1Encoding.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Latin9Encoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Latin9Encoding.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\StreamConverter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\StreamConverter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TextBufferIterator.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TextBufferIterator.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TextConverter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TextConverter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TextEncoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TextEncoding.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TextIterator.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TextIterator.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Unicode.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Unicode.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\UnicodeConverter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\UnicodeConverter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\UTF16Encoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\UTF16Encoding.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\UTF8Encoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\UTF8Encoding.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\UTF8String.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\UTF8String.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Windows1252Encoding.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Windows1252Encoding.cpp"
 					>
 				</File>
 			</Filter>
@@ -3193,59 +3186,59 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ASCIIEncoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ASCIIEncoding.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Latin1Encoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Latin1Encoding.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Latin9Encoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Latin9Encoding.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StreamConverter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StreamConverter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TextBufferIterator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TextBufferIterator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TextConverter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TextConverter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TextEncoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TextEncoding.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TextIterator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TextIterator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Unicode.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Unicode.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UnicodeConverter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UnicodeConverter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UTF16Encoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UTF16Encoding.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UTF8Encoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UTF8Encoding.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UTF8String.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UTF8String.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Windows1252Encoding.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Windows1252Encoding.h"
 					>
 				</File>
 			</Filter>
@@ -3257,19 +3250,19 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\FileStreamFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\FileStreamFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\URI.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\URI.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\URIStreamFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\URIStreamFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\URIStreamOpener.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\URIStreamOpener.cpp"
 					>
 				</File>
 			</Filter>
@@ -3277,19 +3270,19 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FileStreamFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FileStreamFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\URI.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\URI.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\URIStreamFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\URIStreamFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\URIStreamOpener.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\URIStreamOpener.h"
 					>
 				</File>
 			</Filter>
@@ -3301,15 +3294,15 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Task.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Task.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TaskManager.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TaskManager.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\TaskNotification.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\TaskNotification.cpp"
 					>
 				</File>
 			</Filter>
@@ -3317,15 +3310,15 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Task.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Task.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TaskManager.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TaskManager.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\TaskNotification.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\TaskNotification.h"
 					>
 				</File>
 			</Filter>
@@ -3337,75 +3330,71 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AbstractDelegate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AbstractDelegate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AbstractEvent.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AbstractEvent.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AbstractPriorityDelegate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AbstractPriorityDelegate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AccessExpirationDecorator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\BasicEvent.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\BasicEvent.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\DefaultStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\CompareFunctions.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Delegate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\DefaultStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\EventArgs.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Delegate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Expire.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\EventArgs.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FIFOEvent.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Expire.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FIFOStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FIFOEvent.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FunctionDelegate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FIFOStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\FunctionPriorityDelegate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FunctionDelegate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\NotificationStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\FunctionPriorityDelegate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PriorityDelegate.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\NotificationStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PriorityEvent.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PriorityDelegate.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PriorityExpire.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PriorityEvent.h"
-					>
-				</File>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\PriorityExpire.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\PriorityStrategy.h"
 					>
 				</File>
 			</Filter>
@@ -3413,7 +3402,7 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\EventArgs.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\EventArgs.cpp"
 					>
 				</File>
 			</Filter>
@@ -3425,83 +3414,87 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AbstractCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AbstractCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AbstractStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AbstractStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AccessExpireCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AccessExpirationDecorator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AccessExpireLRUCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AccessExpireCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\AccessExpireStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AccessExpireLRUCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ExpirationDecorator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\AccessExpireStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ExpireCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ExpirationDecorator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ExpireLRUCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ExpireCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ExpireStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ExpireLRUCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\KeyValueArgs.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ExpireStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LRUCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\KeyValueArgs.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LRUStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LRUCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\StrategyCollection.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LRUStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UniqueAccessExpireCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\StrategyCollection.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UniqueAccessExpireLRUCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UniqueAccessExpireCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UniqueAccessExpireStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UniqueAccessExpireLRUCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UniqueExpireCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UniqueAccessExpireStrategy.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UniqueExpireLRUCache.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UniqueExpireCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\UniqueExpireStrategy.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UniqueExpireLRUCache.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\ValidArgs.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\UniqueExpireStrategy.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\ValidArgs.h"
 					>
 				</File>
 			</Filter>
@@ -3517,35 +3510,35 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\Hash.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\Hash.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HashFunction.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HashFunction.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HashMap.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HashMap.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HashSet.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HashSet.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HashStatistic.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HashStatistic.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\HashTable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\HashTable.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\LinearHashTable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\LinearHashTable.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\include\Poco\SimpleHashTable.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\include\Poco\SimpleHashTable.h"
 					>
 				</File>
 			</Filter>
@@ -3553,15 +3546,35 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\Hash.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\Hash.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Foundation\src\HashStatistic.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\HashStatistic.cpp"
 					>
 				</File>
 			</Filter>
 		</Filter>
+		<File
+			RelativePath="..\DLLVersion.rc"
+			>
+			<FileConfiguration
+				Name="Release|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCResourceCompilerTool"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Debug|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCResourceCompilerTool"
+				/>
+			</FileConfiguration>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

@@ -3,8 +3,8 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="poco-net"
-	ProjectGUID="{B057A1FE-09F7-465E-B8B5-E1B659051D76}"
-	RootNamespace="poco-new"
+	ProjectGUID="{57DF8545-1884-4481-8822-BADF7E125B8D}"
+	RootNamespace="poco-net"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
 	>
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.1p1\Net\include;..\..\3rdparty\poco-1.4.1p1\Foundation\include"
+				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.3p1\Net\include;..\..\3rdparty\poco-1.4.3p1\Foundation\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;POCO_STATIC;"
 				StringPooling="true"
 				MinimalRebuild="true"
@@ -52,6 +52,7 @@
 				ForceConformanceInForLoopScope="true"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="0"
+				ProgramDataBaseFileName="..\lib\PocoNetmdd.pdb"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
 				DebugInformationFormat="4"
@@ -115,7 +116,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
-				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.1p1\Net\include;..\..\3rdparty\poco-1.4.1p1\Foundation\include"
+				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.3p1\Net\include;..\..\3rdparty\poco-1.4.3p1\Foundation\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;POCO_STATIC;"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -169,31 +170,31 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\DNS.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\DNS.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HostEntry.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HostEntry.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\IPAddress.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\IPAddress.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\Net.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\Net.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\NetException.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\NetException.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketAddress.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketAddress.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketDefs.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketDefs.h"
 					>
 				</File>
 			</Filter>
@@ -201,23 +202,23 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\DNS.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\DNS.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HostEntry.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HostEntry.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\IPAddress.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\IPAddress.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\NetException.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\NetException.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SocketAddress.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SocketAddress.cpp"
 					>
 				</File>
 			</Filter>
@@ -229,59 +230,59 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\DatagramSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\DatagramSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\DatagramSocketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\DatagramSocketImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\DialogSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\DialogSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MulticastSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MulticastSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\NetworkInterface.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\NetworkInterface.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\RawSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\RawSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\RawSocketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\RawSocketImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ServerSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ServerSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ServerSocketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ServerSocketImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\Socket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\Socket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\StreamSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\StreamSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\StreamSocketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\StreamSocketImpl.h"
 					>
 				</File>
 			</Filter>
@@ -289,59 +290,59 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\DatagramSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\DatagramSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\DatagramSocketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\DatagramSocketImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\DialogSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\DialogSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MulticastSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MulticastSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\NetworkInterface.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\NetworkInterface.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\RawSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\RawSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\RawSocketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\RawSocketImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ServerSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ServerSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ServerSocketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ServerSocketImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\Socket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\Socket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SocketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SocketImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SocketStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SocketStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\StreamSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\StreamSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\StreamSocketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\StreamSocketImpl.cpp"
 					>
 				</File>
 			</Filter>
@@ -353,51 +354,51 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\FilePartSource.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\FilePartSource.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MediaType.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MediaType.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MessageHeader.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MessageHeader.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MultipartReader.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MultipartReader.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MultipartWriter.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MultipartWriter.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\NameValueCollection.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\NameValueCollection.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\NullPartHandler.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\NullPartHandler.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\PartHandler.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\PartHandler.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\PartSource.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\PartSource.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\QuotedPrintableDecoder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\QuotedPrintableDecoder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\QuotedPrintableEncoder.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\QuotedPrintableEncoder.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\StringPartSource.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\StringPartSource.h"
 					>
 				</File>
 			</Filter>
@@ -405,51 +406,51 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\FilePartSource.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\FilePartSource.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MediaType.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MediaType.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MessageHeader.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MessageHeader.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MultipartReader.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MultipartReader.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MultipartWriter.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MultipartWriter.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\NameValueCollection.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\NameValueCollection.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\NullPartHandler.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\NullPartHandler.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\PartHandler.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\PartHandler.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\PartSource.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\PartSource.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\QuotedPrintableDecoder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\QuotedPrintableDecoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\QuotedPrintableEncoder.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\QuotedPrintableEncoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\StringPartSource.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\StringPartSource.cpp"
 					>
 				</File>
 			</Filter>
@@ -461,51 +462,63 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPBasicCredentials.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPAuthenticationParams.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPBasicStreamBuf.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPBasicCredentials.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPBufferAllocator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPBasicStreamBuf.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPChunkedStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPBufferAllocator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPCookie.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPChunkedStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPFixedLengthStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPCookie.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPHeaderStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPCredentials.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPMessage.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPDigestCredentials.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPRequest.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPFixedLengthStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPResponse.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPHeaderStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPSession.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPMessage.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPRequest.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPResponse.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPSession.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPStream.h"
 					>
 				</File>
 			</Filter>
@@ -513,47 +526,59 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPBasicCredentials.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPAuthenticationParams.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPBufferAllocator.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPBasicCredentials.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPChunkedStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPBufferAllocator.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPCookie.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPChunkedStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPFixedLengthStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPCookie.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPHeaderStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPCredentials.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPMessage.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPDigestCredentials.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPRequest.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPFixedLengthStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPResponse.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPHeaderStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPSession.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPMessage.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPRequest.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPResponse.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPSession.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPStream.cpp"
 					>
 				</File>
 			</Filter>
@@ -565,23 +590,23 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\TCPServer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\TCPServer.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\TCPServerConnection.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\TCPServerConnection.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\TCPServerConnectionFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\TCPServerConnectionFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\TCPServerDispatcher.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\TCPServerDispatcher.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\TCPServerParams.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\TCPServerParams.h"
 					>
 				</File>
 			</Filter>
@@ -589,23 +614,23 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\TCPServer.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\TCPServer.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\TCPServerConnection.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\TCPServerConnection.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\TCPServerConnectionFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\TCPServerConnectionFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\TCPServerDispatcher.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\TCPServerDispatcher.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\TCPServerParams.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\TCPServerParams.cpp"
 					>
 				</File>
 			</Filter>
@@ -617,51 +642,51 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\AbstractHTTPRequestHandler.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\AbstractHTTPRequestHandler.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPRequestHandler.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPRequestHandler.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPRequestHandlerFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPRequestHandlerFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServer.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServer.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerConnection.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerConnection.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerConnectionFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerConnectionFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerParams.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerParams.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerRequest.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerRequest.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerRequestImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerRequestImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerResponse.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerResponse.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerResponseImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerResponseImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPServerSession.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPServerSession.h"
 					>
 				</File>
 			</Filter>
@@ -669,51 +694,51 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\AbstractHTTPRequestHandler.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\AbstractHTTPRequestHandler.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPRequestHandler.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPRequestHandler.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPRequestHandlerFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPRequestHandlerFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServer.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServer.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerConnection.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerConnection.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerConnectionFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerConnectionFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerParams.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerParams.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerRequest.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerRequest.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerRequestImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerRequestImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerResponse.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerResponse.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerResponseImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerResponseImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPServerSession.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPServerSession.cpp"
 					>
 				</File>
 			</Filter>
@@ -725,23 +750,23 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPClientSession.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPClientSession.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPIOStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPIOStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPSessionFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPSessionFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPSessionInstantiator.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPSessionInstantiator.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTTPStreamFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTTPStreamFactory.h"
 					>
 				</File>
 			</Filter>
@@ -749,23 +774,23 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPClientSession.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPClientSession.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPIOStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPIOStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPSessionFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPSessionFactory.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPSessionInstantiator.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPSessionInstantiator.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTTPStreamFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTTPStreamFactory.cpp"
 					>
 				</File>
 			</Filter>
@@ -777,7 +802,7 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\HTMLForm.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\HTMLForm.h"
 					>
 				</File>
 			</Filter>
@@ -785,7 +810,7 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\HTMLForm.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\HTMLForm.cpp"
 					>
 				</File>
 			</Filter>
@@ -797,11 +822,11 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\FTPClientSession.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\FTPClientSession.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\FTPStreamFactory.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\FTPStreamFactory.h"
 					>
 				</File>
 			</Filter>
@@ -809,11 +834,11 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\FTPClientSession.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\FTPClientSession.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\FTPStreamFactory.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\FTPStreamFactory.cpp"
 					>
 				</File>
 			</Filter>
@@ -825,23 +850,23 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketAcceptor.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketAcceptor.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketConnector.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketConnector.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketNotification.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketNotification.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketNotifier.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketNotifier.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SocketReactor.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SocketReactor.h"
 					>
 				</File>
 			</Filter>
@@ -849,15 +874,15 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SocketNotification.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SocketNotification.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SocketNotifier.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SocketNotifier.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SocketReactor.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SocketReactor.cpp"
 					>
 				</File>
 			</Filter>
@@ -869,23 +894,23 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MailMessage.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MailMessage.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MailRecipient.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MailRecipient.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\MailStream.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\MailStream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\POP3ClientSession.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\POP3ClientSession.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\SMTPClientSession.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\SMTPClientSession.h"
 					>
 				</File>
 			</Filter>
@@ -893,23 +918,23 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MailMessage.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MailMessage.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MailRecipient.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MailRecipient.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\MailStream.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\MailStream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\POP3ClientSession.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\POP3ClientSession.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\SMTPClientSession.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\SMTPClientSession.cpp"
 					>
 				</File>
 			</Filter>
@@ -921,31 +946,31 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPClient.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPClient.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPEventArgs.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPEventArgs.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPPacket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPPacket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPPacketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPPacketImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPSocket.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPSocket.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPSocketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPSocketImpl.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\ICMPv4PacketImpl.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\ICMPv4PacketImpl.h"
 					>
 				</File>
 			</Filter>
@@ -953,31 +978,31 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPClient.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPClient.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPEventArgs.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPEventArgs.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPPacket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPPacket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPPacketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPPacketImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPSocket.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPSocket.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPSocketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPSocketImpl.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\ICMPv4PacketImpl.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\ICMPv4PacketImpl.cpp"
 					>
 				</File>
 			</Filter>
@@ -989,11 +1014,11 @@
 				Name="Header Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\RemoteSyslogChannel.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\RemoteSyslogChannel.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\include\Poco\Net\RemoteSyslogListener.h"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\RemoteSyslogListener.h"
 					>
 				</File>
 			</Filter>
@@ -1001,15 +1026,63 @@
 				Name="Source Files"
 				>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\RemoteSyslogChannel.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\RemoteSyslogChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\3rdparty\poco-1.4.1p1\Net\src\RemoteSyslogListener.cpp"
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\RemoteSyslogListener.cpp"
 					>
 				</File>
 			</Filter>
 		</Filter>
+		<Filter
+			Name="WebSocket"
+			>
+			<Filter
+				Name="Header Files"
+				>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\WebSocket.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\include\Poco\Net\WebSocketImpl.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Source Files"
+				>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\WebSocket.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\3rdparty\poco-1.4.3p1\Net\src\WebSocketImpl.cpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<File
+			RelativePath="..\DLLVersion.rc"
+			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCResourceCompilerTool"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCResourceCompilerTool"
+				/>
+			</FileConfiguration>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>
