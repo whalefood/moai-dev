@@ -122,6 +122,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "moaicore", "moaicore\moaico
 		{97D147F3-4DBC-45CD-87EB-6C90EB6EFE21} = {97D147F3-4DBC-45CD-87EB-6C90EB6EFE21}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poco-foundation", "poco-foundation\poco-foundation.vcproj", "{3F51E45D-D783-4A04-990B-B51EEB6A3FB8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poco-net", "poco-net\poco-net.vcproj", "{57DF8545-1884-4481-8822-BADF7E125B8D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F51E45D-D783-4A04-990B-B51EEB6A3FB8} = {3F51E45D-D783-4A04-990B-B51EEB6A3FB8}
+	EndProjectSection
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite", "sqlite\sqlite.vcproj", "{A9935050-2E54-4674-80F8-CFC45A2C106A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyxml", "tinyxml\tinyxml.vcproj", "{991EBC54-28FF-44A1-863E-E70617782825}"
@@ -153,13 +160,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "work", "work\work.vcproj", 
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "moaiext-debugger", "moaiext-debugger\moaiext-debugger.vcproj", "{397A08C8-EF50-470A-9100-5C78FC0F332D}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poco-foundation", "poco-foundation\poco-foundation.vcproj", "{3F51E45D-D783-4A04-990B-B51EEB6A3FB8}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poco-net", "poco-net\poco-net.vcproj", "{57DF8545-1884-4481-8822-BADF7E125B8D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{3F51E45D-D783-4A04-990B-B51EEB6A3FB8} = {3F51E45D-D783-4A04-990B-B51EEB6A3FB8}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
