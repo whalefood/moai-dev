@@ -45,14 +45,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\src;..\..\src\config;&quot;..\..\src\config-default&quot;;..\..\3rdparty;&quot;..\..\3rdparty\lua-5.1.3\src&quot;;&quot;..\..\3rdparty\glut-3.7.6-bin&quot;;&quot;..\..\3rdparty\glew-1.5.6\include&quot;;&quot;..\..\3rdparty\zlib-1.2.3&quot;;&quot;..\..\3rdparty\sqlite-3.6.16&quot;;..\..\3rdparty\tinyxml;&quot;..\..\3rdparty\curl-7.19.7\include&quot;;..\..\3rdparty\lpng140;&quot;..\..\3rdparty\expat-2.0.1\lib&quot;;&quot;..\..\3rdparty\jansson-2.1\src&quot;;&quot;..\..\3rdparty\freetype-2.4.4\include&quot;;&quot;..\..\3rdparty\box2d-2.2.1&quot;;&quot;..\..\3rdparty\chipmunk-5.3.4\include&quot;"
-				PreprocessorDefinitions="WIN32;_CONSOLE;_DEBUG;GLUTHOST_USE_LUAEXT;GLUTHOST_USE_PARTICLE_PRESETS"
+				AdditionalIncludeDirectories="..\..\src;..\..\src\config;&quot;..\..\src\config-default&quot;;..\..\3rdparty;&quot;..\..\3rdparty\lua-5.1.3\src&quot;;&quot;..\..\3rdparty\glut-3.7.6-bin&quot;;&quot;..\..\3rdparty\glew-1.5.6\include&quot;;&quot;..\..\3rdparty\zlib-1.2.3&quot;;&quot;..\..\3rdparty\sqlite-3.6.16&quot;;..\..\3rdparty\tinyxml;&quot;..\..\3rdparty\curl-7.19.7\include&quot;;..\..\3rdparty\lpng140;&quot;..\..\3rdparty\expat-2.0.1\lib&quot;;&quot;..\..\3rdparty\jansson-2.1\src&quot;;&quot;..\..\3rdparty\freetype-2.4.4\include&quot;;&quot;..\..\3rdparty\box2d-2.2.1&quot;;&quot;..\..\3rdparty\chipmunk-5.3.4\include&quot;;&quot;..\..\3rdparty\poco-1.4.3p1\Foundation\include&quot;;&quot;..\..\3rdparty\poco-1.4.3p1\Net\include&quot;"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_DEBUG;GLUTHOST_USE_LUAEXT;GLUTHOST_USE_PARTICLE_PRESETS;Foundation_EXPORTS;Net_EXPORTS;POCO_STATIC;PCRE_STATIC"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				TreatWChar_tAsBuiltInType="false"
+				TreatWChar_tAsBuiltInType="true"
 				ForceConformanceInForLoopScope="false"
-				RuntimeTypeInfo="false"
+				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				DebugInformationFormat="3"
@@ -129,12 +129,12 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\..\src;..\..\src\config;&quot;..\..\src\config-default&quot;;..\..\3rdparty;&quot;..\..\3rdparty\lua-5.1.3\src&quot;;&quot;..\..\3rdparty\glut-3.7.6-bin&quot;;&quot;..\..\3rdparty\glew-1.5.6\include&quot;;&quot;..\..\3rdparty\zlib-1.2.3&quot;;&quot;..\..\3rdparty\sqlite-3.6.16&quot;;..\..\3rdparty\tinyxml;&quot;..\..\3rdparty\curl-7.19.7\include&quot;;..\..\3rdparty\lpng140;&quot;..\..\3rdparty\expat-2.0.1\lib&quot;;&quot;..\..\3rdparty\jansson-2.1\src&quot;;&quot;..\..\3rdparty\freetype-2.4.4\include&quot;;&quot;..\..\3rdparty\box2d-2.2.1&quot;;&quot;..\..\3rdparty\chipmunk-5.3.4\include&quot;"
-				PreprocessorDefinitions="WIN32;_CONSOLE;GLUTHOST_USE_LUAEXT;GLUTHOST_USE_PARTICLE_PRESETS"
+				AdditionalIncludeDirectories="..\..\src;..\..\src\config;&quot;..\..\src\config-default&quot;;..\..\3rdparty;&quot;..\..\3rdparty\lua-5.1.3\src&quot;;&quot;..\..\3rdparty\glut-3.7.6-bin&quot;;&quot;..\..\3rdparty\glew-1.5.6\include&quot;;&quot;..\..\3rdparty\zlib-1.2.3&quot;;&quot;..\..\3rdparty\sqlite-3.6.16&quot;;..\..\3rdparty\tinyxml;&quot;..\..\3rdparty\curl-7.19.7\include&quot;;..\..\3rdparty\lpng140;&quot;..\..\3rdparty\expat-2.0.1\lib&quot;;&quot;..\..\3rdparty\jansson-2.1\src&quot;;&quot;..\..\3rdparty\freetype-2.4.4\include&quot;;&quot;..\..\3rdparty\box2d-2.2.1&quot;;&quot;..\..\3rdparty\chipmunk-5.3.4\include&quot;;&quot;..\..\3rdparty\poco-1.4.3p1\Foundation\include&quot;;&quot;..\..\3rdparty\poco-1.4.3p1\Net\include&quot;"
+				PreprocessorDefinitions="WIN32;_CONSOLE;GLUTHOST_USE_LUAEXT;GLUTHOST_USE_PARTICLE_PRESETS;Foundation_EXPORTS;Net_EXPORTS;POCO_STATIC;PCRE_STATIC"
 				RuntimeLibrary="2"
-				TreatWChar_tAsBuiltInType="false"
+				TreatWChar_tAsBuiltInType="true"
 				ForceConformanceInForLoopScope="false"
-				RuntimeTypeInfo="false"
+				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				DebugInformationFormat="0"
@@ -388,6 +388,14 @@
 		</File>
 		<File
 			RelativePath="..\..\src\work\work-pathfinding.h"
+			>
+		</File>
+		<File
+			RelativePath="..\..\src\work\work-poco-http.cpp"
+			>
+		</File>
+		<File
+			RelativePath="..\..\src\work\work-poco-http.h"
 			>
 		</File>
 		<File

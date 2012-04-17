@@ -42,7 +42,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.3p1\Net\include;..\..\3rdparty\poco-1.4.3p1\Foundation\include"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;POCO_STATIC;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;POCO_STATIC;Foundation_EXPORTS;Net_EXPORTS"
 				StringPooling="true"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -116,7 +116,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				AdditionalIncludeDirectories="..\..\3rdparty\poco-1.4.3p1\Net\include;..\..\3rdparty\poco-1.4.3p1\Foundation\include"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;POCO_STATIC;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;POCO_STATIC;Foundation_EXPORTS;Net_EXPORTS"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="false"
@@ -1062,26 +1062,6 @@
 				</File>
 			</Filter>
 		</Filter>
-		<File
-			RelativePath="..\DLLVersion.rc"
-			>
-			<FileConfiguration
-				Name="Debug|Win32"
-				ExcludedFromBuild="true"
-				>
-				<Tool
-					Name="VCResourceCompilerTool"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Release|Win32"
-				ExcludedFromBuild="true"
-				>
-				<Tool
-					Name="VCResourceCompilerTool"
-				/>
-			</FileConfiguration>
-		</File>
 	</Files>
 	<Globals>
 	</Globals>

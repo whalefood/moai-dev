@@ -2023,40 +2023,6 @@
 					>
 				</File>
 			</Filter>
-			<Filter
-				Name="Message Files"
-				>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pocomsg.mc"
-					>
-					<FileConfiguration
-						Name="Release|Win32"
-						>
-						<Tool
-							Name="VCCustomBuildTool"
-							CommandLine="mc -h &quot;$(InputDir).&quot; -r &quot;$(InputDir).&quot; &quot;$(InputPath)&#x0D;&#x0A;"
-							Outputs="$(InputDir)\pocomsg.rc;$(InputDir)\pocomsg.h;"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|Win32"
-						>
-						<Tool
-							Name="VCCustomBuildTool"
-							CommandLine="mc -h &quot;$(InputDir).&quot; -r &quot;$(InputDir).&quot; &quot;$(InputPath)&#x0D;&#x0A;"
-							Outputs="$(InputDir)\pocomsg.rc;$(InputDir)\pocomsg.h;"
-						/>
-					</FileConfiguration>
-				</File>
-			</Filter>
-			<Filter
-				Name="Resource Files"
-				>
-				<File
-					RelativePath="..\..\3rdparty\poco-1.4.3p1\Foundation\src\pocomsg.rc"
-					>
-				</File>
-			</Filter>
 		</Filter>
 		<Filter
 			Name="Notifications"
@@ -3554,26 +3520,6 @@
 				</File>
 			</Filter>
 		</Filter>
-		<File
-			RelativePath="..\DLLVersion.rc"
-			>
-			<FileConfiguration
-				Name="Release|Win32"
-				ExcludedFromBuild="true"
-				>
-				<Tool
-					Name="VCResourceCompilerTool"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Debug|Win32"
-				ExcludedFromBuild="true"
-				>
-				<Tool
-					Name="VCResourceCompilerTool"
-				/>
-			</FileConfiguration>
-		</File>
 	</Files>
 	<Globals>
 	</Globals>
